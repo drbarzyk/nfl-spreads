@@ -4,7 +4,7 @@ import Game from '../mongoose/schemas/Game';
 
 export default async (req: any, res: any) => {
     try {
-        res.status(200).send("NFL Spread Showdown API")
+        res.status(200).json("NFL Spread Showdown API")
     } catch (err) {
         console.error(err);
         res.status(500).send('Error importing games');
